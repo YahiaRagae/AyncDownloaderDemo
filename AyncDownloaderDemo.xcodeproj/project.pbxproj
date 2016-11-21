@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0089372D1DE2BBB500F6F530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089372C1DE2BBB500F6F530 /* AppDelegate.swift */; };
+		0089372F1DE2BBB500F6F530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089372E1DE2BBB500F6F530 /* ViewController.swift */; };
+		008937321DE2BBB500F6F530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008937301DE2BBB500F6F530 /* Main.storyboard */; };
+		008937341DE2BBB500F6F530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008937331DE2BBB500F6F530 /* Assets.xcassets */; };
+		008937371DE2BBB500F6F530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008937351DE2BBB500F6F530 /* LaunchScreen.storyboard */; };
+		008937431DE2BBD500F6F530 /* AyncDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008937421DE2BBD500F6F530 /* AyncDownloader.swift */; };
+		008937481DE2BF8B00F6F530 /* ConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008937471DE2BF8B00F6F530 /* ConfigBuilder.swift */; };
+		00E27D421DE2C46000FAB821 /* DataRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D411DE2C46000FAB821 /* DataRequestConfig.swift */; };
+		00E27D441DE2C63600FAB821 /* OnlineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D431DE2C63600FAB821 /* OnlineController.swift */; };
+		00E27D461DE2C8CD00FAB821 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D451DE2C8CD00FAB821 /* Response.swift */; };
+		00E27D491DE2DCAB00FAB821 /* DataAccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D481DE2DCAB00FAB821 /* DataAccessController.swift */; };
+		00E27D741DE2E4FF00FAB821 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D6F1DE2E4FF00FAB821 /* Data.swift */; };
+		00E27D751DE2E4FF00FAB821 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D701DE2E4FF00FAB821 /* Image.swift */; };
+		00E27D761DE2E4FF00FAB821 /* Pinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D711DE2E4FF00FAB821 /* Pinner.swift */; };
+		00E27D771DE2E4FF00FAB821 /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D721DE2E4FF00FAB821 /* Pins.swift */; };
+		00E27D781DE2E4FF00FAB821 /* Pinterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D731DE2E4FF00FAB821 /* Pinterest.swift */; };
+		00E27D951DE307BD00FAB821 /* UIImage+AyncDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D941DE307BD00FAB821 /* UIImage+AyncDownloader.swift */; };
+		190B14BE6A4223682F28C9CF /* Pods_AyncDownloaderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E281E42BE422513AF32F2B /* Pods_AyncDownloaderDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008937291DE2BBB500F6F530 /* AyncDownloaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyncDownloaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0089372C1DE2BBB500F6F530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0089372E1DE2BBB500F6F530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		008937311DE2BBB500F6F530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		008937331DE2BBB500F6F530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		008937361DE2BBB500F6F530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		008937381DE2BBB500F6F530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008937421DE2BBD500F6F530 /* AyncDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyncDownloader.swift; sourceTree = "<group>"; };
+		008937471DE2BF8B00F6F530 /* ConfigBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigBuilder.swift; sourceTree = "<group>"; };
+		00E27D411DE2C46000FAB821 /* DataRequestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequestConfig.swift; sourceTree = "<group>"; };
+		00E27D431DE2C63600FAB821 /* OnlineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineController.swift; sourceTree = "<group>"; };
+		00E27D451DE2C8CD00FAB821 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		00E27D481DE2DCAB00FAB821 /* DataAccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessController.swift; sourceTree = "<group>"; };
+		00E27D6F1DE2E4FF00FAB821 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		00E27D701DE2E4FF00FAB821 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		00E27D711DE2E4FF00FAB821 /* Pinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinner.swift; sourceTree = "<group>"; };
+		00E27D721DE2E4FF00FAB821 /* Pins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
+		00E27D731DE2E4FF00FAB821 /* Pinterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinterest.swift; sourceTree = "<group>"; };
+		00E27D921DE2EE1F00FAB821 /* AyncDownloaderDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AyncDownloaderDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		00E27D941DE307BD00FAB821 /* UIImage+AyncDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AyncDownloader.swift"; sourceTree = "<group>"; };
+		2D2ED0EC1BD1ED3356E61243 /* Pods-AyncDownloaderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyncDownloaderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyncDownloaderDemo/Pods-AyncDownloaderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		304E2E2508BEA395E2F3847A /* Pods-AyncDownloaderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyncDownloaderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AyncDownloaderDemo/Pods-AyncDownloaderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D9E281E42BE422513AF32F2B /* Pods_AyncDownloaderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyncDownloaderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008937261DE2BBB500F6F530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190B14BE6A4223682F28C9CF /* Pods_AyncDownloaderDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008937201DE2BBB500F6F530 = {
+			isa = PBXGroup;
+			children = (
+				0089372B1DE2BBB500F6F530 /* AyncDownloaderDemo */,
+				0089372A1DE2BBB500F6F530 /* Products */,
+				9242029103CD8C512425C2BB /* Pods */,
+				77EBC7AA36E7ADF8B80A7372 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0089372A1DE2BBB500F6F530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008937291DE2BBB500F6F530 /* AyncDownloaderDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0089372B1DE2BBB500F6F530 /* AyncDownloaderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				00E27D7C1DE2EBD800FAB821 /* Libs */,
+				00E27D7D1DE2EBD800FAB821 /* CustomViews */,
+				00E27D471DE2DCA200FAB821 /* DataAccessController */,
+				0089373E1DE2BBC400F6F530 /* AyncDownloader */,
+				0089372C1DE2BBB500F6F530 /* AppDelegate.swift */,
+				0089372E1DE2BBB500F6F530 /* ViewController.swift */,
+				008937301DE2BBB500F6F530 /* Main.storyboard */,
+				008937331DE2BBB500F6F530 /* Assets.xcassets */,
+				008937351DE2BBB500F6F530 /* LaunchScreen.storyboard */,
+				008937381DE2BBB500F6F530 /* Info.plist */,
+				00E27D921DE2EE1F00FAB821 /* AyncDownloaderDemo-Bridging-Header.h */,
+			);
+			path = AyncDownloaderDemo;
+			sourceTree = "<group>";
+		};
+		0089373E1DE2BBC400F6F530 /* AyncDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				008937461DE2BF6B00F6F530 /* ConfigBuilders */,
+				008937421DE2BBD500F6F530 /* AyncDownloader.swift */,
+				00E27D431DE2C63600FAB821 /* OnlineController.swift */,
+				00E27D451DE2C8CD00FAB821 /* Response.swift */,
+				00E27D941DE307BD00FAB821 /* UIImage+AyncDownloader.swift */,
+			);
+			path = AyncDownloader;
+			sourceTree = "<group>";
+		};
+		008937461DE2BF6B00F6F530 /* ConfigBuilders */ = {
+			isa = PBXGroup;
+			children = (
+				008937471DE2BF8B00F6F530 /* ConfigBuilder.swift */,
+				00E27D411DE2C46000FAB821 /* DataRequestConfig.swift */,
+			);
+			path = ConfigBuilders;
+			sourceTree = "<group>";
+		};
+		00E27D471DE2DCA200FAB821 /* DataAccessController */ = {
+			isa = PBXGroup;
+			children = (
+				00E27D4A1DE2DCF700FAB821 /* Models */,
+				00E27D481DE2DCAB00FAB821 /* DataAccessController.swift */,
+			);
+			path = DataAccessController;
+			sourceTree = "<group>";
+		};
+		00E27D4A1DE2DCF700FAB821 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E27D6F1DE2E4FF00FAB821 /* Data.swift */,
+				00E27D701DE2E4FF00FAB821 /* Image.swift */,
+				00E27D711DE2E4FF00FAB821 /* Pinner.swift */,
+				00E27D721DE2E4FF00FAB821 /* Pins.swift */,
+				00E27D731DE2E4FF00FAB821 /* Pinterest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00E27D7C1DE2EBD800FAB821 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		00E27D7D1DE2EBD800FAB821 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		77EBC7AA36E7ADF8B80A7372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9E281E42BE422513AF32F2B /* Pods_AyncDownloaderDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9242029103CD8C512425C2BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D2ED0EC1BD1ED3356E61243 /* Pods-AyncDownloaderDemo.debug.xcconfig */,
+				304E2E2508BEA395E2F3847A /* Pods-AyncDownloaderDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		008937281DE2BBB500F6F530 /* AyncDownloaderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0089373B1DE2BBB500F6F530 /* Build configuration list for PBXNativeTarget "AyncDownloaderDemo" */;
+			buildPhases = (
+				AD15D44CE5458048E1468F18 /* [CP] Check Pods Manifest.lock */,
+				008937251DE2BBB500F6F530 /* Sources */,
+				008937261DE2BBB500F6F530 /* Frameworks */,
+				008937271DE2BBB500F6F530 /* Resources */,
+				A53594F9C4482822FBF7400A /* [CP] Embed Pods Frameworks */,
+				EF4622476DF23786AFE21F38 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AyncDownloaderDemo;
+			productName = AyncDownloaderDemo;
+			productReference = 008937291DE2BBB500F6F530 /* AyncDownloaderDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008937211DE2BBB500F6F530 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Yahia;
+				TargetAttributes = {
+					008937281DE2BBB500F6F530 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N924SGNGPQ;
+					};
+				};
+			};
+			buildConfigurationList = 008937241DE2BBB500F6F530 /* Build configuration list for PBXProject "AyncDownloaderDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 008937201DE2BBB500F6F530;
+			productRefGroup = 0089372A1DE2BBB500F6F530 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				008937281DE2BBB500F6F530 /* AyncDownloaderDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		008937271DE2BBB500F6F530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008937371DE2BBB500F6F530 /* LaunchScreen.storyboard in Resources */,
+				008937341DE2BBB500F6F530 /* Assets.xcassets in Resources */,
+				008937321DE2BBB500F6F530 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A53594F9C4482822FBF7400A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AyncDownloaderDemo/Pods-AyncDownloaderDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD15D44CE5458048E1468F18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF4622476DF23786AFE21F38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AyncDownloaderDemo/Pods-AyncDownloaderDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008937251DE2BBB500F6F530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E27D441DE2C63600FAB821 /* OnlineController.swift in Sources */,
+				0089372F1DE2BBB500F6F530 /* ViewController.swift in Sources */,
+				008937431DE2BBD500F6F530 /* AyncDownloader.swift in Sources */,
+				00E27D771DE2E4FF00FAB821 /* Pins.swift in Sources */,
+				00E27D421DE2C46000FAB821 /* DataRequestConfig.swift in Sources */,
+				00E27D781DE2E4FF00FAB821 /* Pinterest.swift in Sources */,
+				0089372D1DE2BBB500F6F530 /* AppDelegate.swift in Sources */,
+				00E27D761DE2E4FF00FAB821 /* Pinner.swift in Sources */,
+				00E27D491DE2DCAB00FAB821 /* DataAccessController.swift in Sources */,
+				008937481DE2BF8B00F6F530 /* ConfigBuilder.swift in Sources */,
+				00E27D751DE2E4FF00FAB821 /* Image.swift in Sources */,
+				00E27D741DE2E4FF00FAB821 /* Data.swift in Sources */,
+				00E27D461DE2C8CD00FAB821 /* Response.swift in Sources */,
+				00E27D951DE307BD00FAB821 /* UIImage+AyncDownloader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		008937301DE2BBB500F6F530 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008937311DE2BBB500F6F530 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		008937351DE2BBB500F6F530 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				008937361DE2BBB500F6F530 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		008937391DE2BBB500F6F530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0089373A1DE2BBB500F6F530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0089373C1DE2BBB500F6F530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2ED0EC1BD1ED3356E61243 /* Pods-AyncDownloaderDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AyncDownloaderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noon.AyncDownloaderDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/AyncDownloaderDemo/AyncDownloaderDemo-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		0089373D1DE2BBB500F6F530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 304E2E2508BEA395E2F3847A /* Pods-AyncDownloaderDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AyncDownloaderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noon.AyncDownloaderDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/AyncDownloaderDemo/AyncDownloaderDemo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008937241DE2BBB500F6F530 /* Build configuration list for PBXProject "AyncDownloaderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008937391DE2BBB500F6F530 /* Debug */,
+				0089373A1DE2BBB500F6F530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0089373B1DE2BBB500F6F530 /* Build configuration list for PBXNativeTarget "AyncDownloaderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0089373C1DE2BBB500F6F530 /* Debug */,
+				0089373D1DE2BBB500F6F530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 008937211DE2BBB500F6F530 /* Project object */;
+}
