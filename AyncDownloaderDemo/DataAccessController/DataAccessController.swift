@@ -27,6 +27,7 @@ import AsyncDownloader
         
         AsyncDownloader.Configure(ConfigBuilder{builder in
             builder.maxCacheMemory = 50
+            builder.
             })
     }
     
