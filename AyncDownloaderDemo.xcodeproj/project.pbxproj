@@ -13,18 +13,12 @@
 		008937321DE2BBB500F6F530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008937301DE2BBB500F6F530 /* Main.storyboard */; };
 		008937341DE2BBB500F6F530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008937331DE2BBB500F6F530 /* Assets.xcassets */; };
 		008937371DE2BBB500F6F530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008937351DE2BBB500F6F530 /* LaunchScreen.storyboard */; };
-		008937431DE2BBD500F6F530 /* AyncDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008937421DE2BBD500F6F530 /* AyncDownloader.swift */; };
-		008937481DE2BF8B00F6F530 /* ConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008937471DE2BF8B00F6F530 /* ConfigBuilder.swift */; };
-		00E27D421DE2C46000FAB821 /* DataRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D411DE2C46000FAB821 /* DataRequestConfig.swift */; };
-		00E27D441DE2C63600FAB821 /* OnlineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D431DE2C63600FAB821 /* OnlineController.swift */; };
-		00E27D461DE2C8CD00FAB821 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D451DE2C8CD00FAB821 /* Response.swift */; };
 		00E27D491DE2DCAB00FAB821 /* DataAccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D481DE2DCAB00FAB821 /* DataAccessController.swift */; };
 		00E27D741DE2E4FF00FAB821 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D6F1DE2E4FF00FAB821 /* Data.swift */; };
 		00E27D751DE2E4FF00FAB821 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D701DE2E4FF00FAB821 /* Image.swift */; };
 		00E27D761DE2E4FF00FAB821 /* Pinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D711DE2E4FF00FAB821 /* Pinner.swift */; };
 		00E27D771DE2E4FF00FAB821 /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D721DE2E4FF00FAB821 /* Pins.swift */; };
 		00E27D781DE2E4FF00FAB821 /* Pinterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D731DE2E4FF00FAB821 /* Pinterest.swift */; };
-		00E27D951DE307BD00FAB821 /* UIImage+AyncDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27D941DE307BD00FAB821 /* UIImage+AyncDownloader.swift */; };
 		190B14BE6A4223682F28C9CF /* Pods_AyncDownloaderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E281E42BE422513AF32F2B /* Pods_AyncDownloaderDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +31,6 @@
 		008937331DE2BBB500F6F530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008937361DE2BBB500F6F530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		008937381DE2BBB500F6F530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		008937421DE2BBD500F6F530 /* AyncDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AyncDownloader.swift; sourceTree = "<group>"; };
-		008937471DE2BF8B00F6F530 /* ConfigBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigBuilder.swift; sourceTree = "<group>"; };
-		00E27D411DE2C46000FAB821 /* DataRequestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequestConfig.swift; sourceTree = "<group>"; };
-		00E27D431DE2C63600FAB821 /* OnlineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineController.swift; sourceTree = "<group>"; };
-		00E27D451DE2C8CD00FAB821 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		00E27D481DE2DCAB00FAB821 /* DataAccessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessController.swift; sourceTree = "<group>"; };
 		00E27D6F1DE2E4FF00FAB821 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		00E27D701DE2E4FF00FAB821 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -49,7 +38,6 @@
 		00E27D721DE2E4FF00FAB821 /* Pins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
 		00E27D731DE2E4FF00FAB821 /* Pinterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinterest.swift; sourceTree = "<group>"; };
 		00E27D921DE2EE1F00FAB821 /* AyncDownloaderDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AyncDownloaderDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		00E27D941DE307BD00FAB821 /* UIImage+AyncDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+AyncDownloader.swift"; sourceTree = "<group>"; };
 		2D2ED0EC1BD1ED3356E61243 /* Pods-AyncDownloaderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyncDownloaderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AyncDownloaderDemo/Pods-AyncDownloaderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		304E2E2508BEA395E2F3847A /* Pods-AyncDownloaderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyncDownloaderDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AyncDownloaderDemo/Pods-AyncDownloaderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D9E281E42BE422513AF32F2B /* Pods_AyncDownloaderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyncDownloaderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +79,6 @@
 				00E27D7C1DE2EBD800FAB821 /* Libs */,
 				00E27D7D1DE2EBD800FAB821 /* CustomViews */,
 				00E27D471DE2DCA200FAB821 /* DataAccessController */,
-				0089373E1DE2BBC400F6F530 /* AyncDownloader */,
 				0089372C1DE2BBB500F6F530 /* AppDelegate.swift */,
 				0089372E1DE2BBB500F6F530 /* ViewController.swift */,
 				008937301DE2BBB500F6F530 /* Main.storyboard */,
@@ -101,27 +88,6 @@
 				00E27D921DE2EE1F00FAB821 /* AyncDownloaderDemo-Bridging-Header.h */,
 			);
 			path = AyncDownloaderDemo;
-			sourceTree = "<group>";
-		};
-		0089373E1DE2BBC400F6F530 /* AyncDownloader */ = {
-			isa = PBXGroup;
-			children = (
-				008937461DE2BF6B00F6F530 /* ConfigBuilders */,
-				008937421DE2BBD500F6F530 /* AyncDownloader.swift */,
-				00E27D431DE2C63600FAB821 /* OnlineController.swift */,
-				00E27D451DE2C8CD00FAB821 /* Response.swift */,
-				00E27D941DE307BD00FAB821 /* UIImage+AyncDownloader.swift */,
-			);
-			path = AyncDownloader;
-			sourceTree = "<group>";
-		};
-		008937461DE2BF6B00F6F530 /* ConfigBuilders */ = {
-			isa = PBXGroup;
-			children = (
-				008937471DE2BF8B00F6F530 /* ConfigBuilder.swift */,
-				00E27D411DE2C46000FAB821 /* DataRequestConfig.swift */,
-			);
-			path = ConfigBuilders;
 			sourceTree = "<group>";
 		};
 		00E27D471DE2DCA200FAB821 /* DataAccessController */ = {
@@ -300,20 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E27D441DE2C63600FAB821 /* OnlineController.swift in Sources */,
 				0089372F1DE2BBB500F6F530 /* ViewController.swift in Sources */,
-				008937431DE2BBD500F6F530 /* AyncDownloader.swift in Sources */,
 				00E27D771DE2E4FF00FAB821 /* Pins.swift in Sources */,
-				00E27D421DE2C46000FAB821 /* DataRequestConfig.swift in Sources */,
 				00E27D781DE2E4FF00FAB821 /* Pinterest.swift in Sources */,
 				0089372D1DE2BBB500F6F530 /* AppDelegate.swift in Sources */,
 				00E27D761DE2E4FF00FAB821 /* Pinner.swift in Sources */,
 				00E27D491DE2DCAB00FAB821 /* DataAccessController.swift in Sources */,
-				008937481DE2BF8B00F6F530 /* ConfigBuilder.swift in Sources */,
 				00E27D751DE2E4FF00FAB821 /* Image.swift in Sources */,
 				00E27D741DE2E4FF00FAB821 /* Data.swift in Sources */,
-				00E27D461DE2C8CD00FAB821 /* Response.swift in Sources */,
-				00E27D951DE307BD00FAB821 /* UIImage+AyncDownloader.swift in Sources */,
 				008921381DE41D4A00175663 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

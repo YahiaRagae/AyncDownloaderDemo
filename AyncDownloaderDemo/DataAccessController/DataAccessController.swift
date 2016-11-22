@@ -1,6 +1,6 @@
 //
 //  DataAccessController.swift
-//  AyncDownloaderDemo
+//  AsyncDownloaderDemo
 //
 //  Created by Yahia Work on 11/21/16.
 //  Copyright © 2016 Yahia. All rights reserved.
@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AsyncDownloader
 @objc public class DataAccessController: NSObject {
     class var sharedInstance: DataAccessController {
         struct Static {
@@ -24,7 +25,7 @@ import UIKit
     override init() {
         super.init()
         
-        AyncDownloader.Configure(ConfigBuilder{builder in
+        AsyncDownloader.Configure(ConfigBuilder{builder in
             builder.maxCacheMemory = 50
             })
     }
@@ -37,7 +38,7 @@ import UIKit
             builder.loadindView = view
         }
         
-        AyncDownloader.sharedInstance.fetchJsonURL(requestConfig) { (reponse) in
+        AsyncDownloader.sharedInstance.fetchJsonURL(requestConfig) { (reponse) in
             let object = Pinterest.init(json: reponse)
             completion(imagesList: object.data!.pins! )
         }

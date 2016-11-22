@@ -1,18 +1,30 @@
 PODS:
+  - AsyncDownloader (1.0):
+    - JGProgressHUD (= 1.4)
+    - SwiftyJSON (~> 2.4.0)
   - JGProgressHUD (1.4)
   - SwiftyJSON (2.4.0)
   - Toast (3.1.0)
 
 DEPENDENCIES:
-  - JGProgressHUD (= 1.4)
-  - SwiftyJSON (~> 2.4.0)
+  - AsyncDownloader (from `https://github.com/YahiaRagae/AyncDownloader`)
   - Toast (~> 3.1.0)
 
+EXTERNAL SOURCES:
+  AsyncDownloader:
+    :git: https://github.com/YahiaRagae/AyncDownloader
+
+CHECKOUT OPTIONS:
+  AsyncDownloader:
+    :commit: 9c04659cffb6f6458320c39d5fb6c4030d87c3a9
+    :git: https://github.com/YahiaRagae/AyncDownloader
+
 SPEC CHECKSUMS:
+  AsyncDownloader: 92b73f3000f3cde72de643858d780031020f2fa5
   JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: b8081a43fb538894f4bf963d5a98ac83b3b392ce
+PODFILE CHECKSUM: a8aa76dae983c78c0bdd954fb4dc7dab20721373
 
 COCOAPODS: 1.0.1

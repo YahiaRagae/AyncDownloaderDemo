@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  AyncDownloaderDemo
+//  AsyncDownloaderDemo
 //
 //  Created by Yahia Work on 11/21/16.
 //  Copyright © 2016 Yahia. All rights reserved.
 //
 
 import UIKit
+import AsyncDownloader
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
     var refreshView :UIRefreshControl!
     var pageIndex : Int = 0;
