@@ -12,7 +12,7 @@
 
 ## Language ##
 - Objective-c .
-- Swift 2.2 .
+- Swift 2.3 .
 
 
 ## Libraries Used ## 
