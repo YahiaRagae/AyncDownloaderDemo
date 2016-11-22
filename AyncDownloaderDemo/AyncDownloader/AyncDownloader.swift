@@ -14,14 +14,22 @@ import JGProgressHUD
 
 @objc public class AyncDownloader : NSObject {
     static let UD_CONFIG_MAX_MEMORY:String = "UD_CONFIG_MAX_MEMORY"
+    static let UD_CONFIG_IGNORE_CACHING:String = "UD_CONFIG_IGNORE_CACHING"
     static var isSetConfig:Bool = false ;
     var onlineController:OnlineController!
     
     
     static func Configure( config :ConfigBuilder){
-        if let maxMomry  = config.maxMemory  {
+        NSUserDefaults.standardUserDefaults().setBool(config.isIgnoreCaching, forKey: UD_CONFIG_IGNORE_CACHING)
+        if let maxMomry  = config.maxCacheMemory  {
             NSUserDefaults.standardUserDefaults().setInteger(maxMomry, forKey: UD_CONFIG_MAX_MEMORY)
+            NSUserDefaults.standardUserDefaults().synchronize()
             isSetConfig = true;
+            
+            //Set Cache Size To NSURLCache
+            let cacheSize : Int = maxMomry*1024*1024;
+            NSURLCache.setSharedURLCache(NSURLCache(memoryCapacity: cacheSize, diskCapacity: cacheSize, diskPath: nil))
+            
         }
         
     }

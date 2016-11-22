@@ -27,7 +27,18 @@ import UIKit
     
     override init() {
         super.init()
-        session = NSURLSession.sharedSession()
+        
+         
+        let configuration : NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
+        configuration.URLCache = NSURLCache.sharedURLCache()
+        
+        if(NSUserDefaults.standardUserDefaults().boolForKey(AyncDownloader.UD_CONFIG_IGNORE_CACHING)){
+            configuration.requestCachePolicy = .ReloadIgnoringLocalCacheData
+        }else{
+            configuration.requestCachePolicy = .ReturnCacheDataElseLoad
+        }
+        session = NSURLSession(configuration: configuration)
+        
         
     }
     
@@ -36,13 +47,12 @@ import UIKit
 
         let url = NSURL(string: link)
         let task : NSURLSessionDataTask = session.dataTaskWithURL(url!) {  data, response, error in
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             var status : Bool = false
             if  ( error == nil )  {
                 status = true ;
             }
             dispatch_async(dispatch_get_main_queue()) {
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-
                 completion(response: Response.init(error: error, response: response, data: data) , status: status)
             }            
         }
@@ -56,15 +66,17 @@ import UIKit
         let url = NSURL(string: link)
         let task : NSURLSessionDownloadTask = session.downloadTaskWithURL(url!) {  nsurl,response, error in
             var status : Bool = false
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             if  ( error == nil )  {
                 status = true ;
             }
-            let data : NSData = NSData(contentsOfURL: nsurl!)!
-            
 
-            dispatch_async(dispatch_get_main_queue()) {
-                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-                completion(response: Response.init(error: error, response: response, data: data) , status: status)
+            if(status){
+                let data : NSData = NSData(contentsOfURL: nsurl!)!
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    completion(response: Response.init(error: error, response: response, data: data) , status: status)
+                }
             }
 
         }

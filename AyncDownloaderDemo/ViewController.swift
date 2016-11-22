@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import ADMozaicCollectionViewLayout
-
-class ViewController: UIViewController,UICollectionViewDataSource,ADMozaikLayoutDelegate {
-
-    @IBOutlet weak var collectionView: UICollectionView!
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource  {
+    var refreshView :UIRefreshControl!
+    var pageIndex : Int = 0;
+    var isLoadMoreEnabled : Bool = true ;
+    @IBOutlet weak var table: UITableView!
     var pins : [Pins] = []
     
     // MARK: UIViewController LifeCycle
@@ -34,36 +34,41 @@ class ViewController: UIViewController,UICollectionViewDataSource,ADMozaikLayout
     }
     
     func initViews(){
-        let columnWidth = UIScreen.mainScreen().bounds.width/3
-        var portraitLayout: ADMozaikLayout {
-            let columns = [  ADMozaikLayoutColumn(width: columnWidth), ADMozaikLayoutColumn(width: columnWidth), ADMozaikLayoutColumn(width: columnWidth)]
-            let layout = ADMozaikLayout(rowHeight: 120, columns: columns)
-            layout.delegate = self
-            layout.minimumLineSpacing = 1
-            layout.minimumInteritemSpacing = 1
-            return layout;
-        }
-        
-        collectionView.setCollectionViewLayout(portraitLayout, animated: true)
-        collectionView.collectionViewLayout.invalidateLayout()
+        refreshView = UIRefreshControl()
+        refreshView.backgroundColor = UIColor.whiteColor()
+        refreshView.addTarget(self, action: #selector(refreshData), forControlEvents:.ValueChanged)
+        table.addSubview(refreshView) // not required when using UITableViewController
     }
     func loadData(){
-        DataAccessController.sharedInstance.getImagesList(onView: self.view) { (imagesList) in
+        pageIndex = pageIndex + 1
+        DataAccessController.sharedInstance.getImagesList(onView: self.view,pageIndex:pageIndex ) { (imagesList) in
+            if(imagesList.count == 0 ){
+                self.isLoadMoreEnabled = false;
+                self.view.makeToast("No more items :) ")
+            }
             self.pins.appendContentsOf(imagesList)
-            self.collectionView.reloadData()
-            
+            self.table.reloadData()
+            self.refreshView.endRefreshing()
         }
     }
-    // MARK: UICollectionViewDataSource Methods
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func refreshData(){
+        pageIndex = 0
+        self.pins.removeAll()
+        loadData()
+        isLoadMoreEnabled = true
+    }
+    
+    // MARK: UITableViewDataSource Methods
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+  
                 
-         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ADMozaikLayoutCell", forIndexPath: indexPath) as UICollectionViewCell
-        let imageView: UIImageView = cell.viewWithTag(1000) as! UIImageView
-       imageView.image = nil
-       imageView.alpha = 0
+        let cell:ImageCell = tableView.dequeueReusableCellWithIdentifier("ImageCell") as! ImageCell
+        
+        cell.img?.image = nil
+        cell.img.alpha = 0
         let pin : Pins = pins[indexPath.row]
-
-        imageView.loadImage(pin.images![0].url!, isIgnoreCaching: false)
+        cell.lblTitle.text = pin.descriptionValue
+        cell.img.loadImage(pin.images![0].url!, isIgnoreCaching: false)
         
 
         
@@ -71,33 +76,25 @@ class ViewController: UIViewController,UICollectionViewDataSource,ADMozaikLayout
     }
     
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pins.count
-    }
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return   pins.count
     }
     
-    // MARK: UICollectionViewDelegate Methods
-    
-    func collectionView(collectionView: UICollectionView, layout: UICollectionViewLayout, mozaikSizeForItemAtIndexPath indexPath: NSIndexPath) -> ADMozaikLayoutSize {
-        if indexPath.item == 0 {
-            return ADMozaikLayoutSize(columns: 1, rows: 1)
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        let lastSectionIndex = table.numberOfSections - 1 ;
+        let lastRowIndex = table.numberOfRowsInSection(lastSectionIndex)-1
+        
+        if(indexPath.section == lastSectionIndex  && indexPath.row == lastRowIndex){
+            loadData()
         }
-        if indexPath.item % 8 == 0 {
-            return ADMozaikLayoutSize(columns: 2, rows: 2)
-        }
-        else if indexPath.item % 6 == 0 {
-            return ADMozaikLayoutSize(columns: 3, rows: 1)
-        }
-        else if indexPath.item % 4 == 0 {
-            return ADMozaikLayoutSize(columns: 1, rows: 3)
-        }
-        else {
-            return ADMozaikLayoutSize(columns: 1, rows: 1)
-        }
+        
     }
-
+    
+    // MARK: UITableViewDelegate Methods
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
   
 }
 

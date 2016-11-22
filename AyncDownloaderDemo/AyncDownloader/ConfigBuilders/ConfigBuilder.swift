@@ -10,9 +10,14 @@ import Foundation
 
 class ConfigBuilder {
     /**
-     Max Memory in KBs.
+     Max Cache Memory in MBs.
      */
-    var maxMemory:Int?
+    var maxCacheMemory:Int?
+    
+    /**
+     If you whant to force reload the data set to true , defualt value false
+     */
+    var isIgnoreCaching:Bool = false
     
     typealias BuilderClosure = (ConfigBuilder) -> ()
     

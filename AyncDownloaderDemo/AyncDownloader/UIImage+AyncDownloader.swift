@@ -15,7 +15,6 @@ extension UIImageView {
         AyncDownloader.sharedInstance.loadFile(RequestConfig{ builder in
             builder.link = link
             builder.imageView =  self
-            builder.isIgnoreCaching = isIgnoreCaching;
             
         }) { (fileData) in
             self.image = UIImage(data: fileData)

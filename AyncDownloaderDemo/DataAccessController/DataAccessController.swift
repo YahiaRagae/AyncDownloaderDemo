@@ -25,14 +25,13 @@ import UIKit
         super.init()
         
         AyncDownloader.Configure(ConfigBuilder{builder in
-            builder.maxMemory = 5000
+            builder.maxCacheMemory = 50
             })
     }
     
-    public func getImagesList( onView view : UIView! ,withCompletion completion:( imagesList  : [Pins] )->Void){
+    public func getImagesList( onView view : UIView! , pageIndex : Int ,withCompletion completion:( imagesList  : [Pins])->Void){
         let requestConfig : RequestConfig  = RequestConfig{ builder in
             builder.link = "https://api.pinterest.com/v3/pidgets/boards/naturallife/road-trip/pins/"
-            builder.isIgnoreCaching = true
             builder.loadingMessage = "Loading"
             builder.isShowLoadingView = true
             builder.loadindView = view

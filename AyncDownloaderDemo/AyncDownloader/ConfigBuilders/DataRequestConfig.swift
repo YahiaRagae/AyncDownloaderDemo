@@ -26,10 +26,7 @@ class RequestConfig {
      Loading Message.
      */
     var loadingMessage:String?
-    /**
-     If you whant to force reload the data set to true , defualt value false
-     */
-    var isIgnoreCaching:Bool = false
+    
     /**
      ImageView to show image on
      */

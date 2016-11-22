@@ -1,18 +1,18 @@
 PODS:
-  - ADMozaicCollectionViewLayout (1.0.2)
   - JGProgressHUD (1.4)
   - SwiftyJSON (2.4.0)
+  - Toast (3.1.0)
 
 DEPENDENCIES:
-  - ADMozaicCollectionViewLayout (= 1.0.2)
   - JGProgressHUD (= 1.4)
   - SwiftyJSON (~> 2.4.0)
+  - Toast (~> 3.1.0)
 
 SPEC CHECKSUMS:
-  ADMozaicCollectionViewLayout: e051be17ab208c5d7e9d62aae7cd2b65a23c9570
   JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
   SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: a25b494b32802abf16c4e1960a695a3744f37e48
+PODFILE CHECKSUM: b8081a43fb538894f4bf963d5a98ac83b3b392ce
 
 COCOAPODS: 1.0.1
